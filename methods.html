@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Методы – Стеганография</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <header class="p-6 bg-gray-800 shadow-md">
+    <h1 class="text-3xl font-bold">Стеганография</h1>
+    <nav class="mt-2 flex gap-4">
+      <a href="index.html" class="hover:underline">Главная</a>
+      <a href="methods.html" class="hover:underline">Методы</a>
+      <a href="demo.html" class="hover:underline">Попробовать</a>
+      <a href="tools.html" class="hover:underline">Инструменты</a>
+      <a href="theory.html" class="hover:underline">Теория</a>
+    </nav>
+  </header>
+  <main class="p-8 container mx-auto">
+    <h2 class="text-2xl font-semibold mb-8">Методы стеганографии</h2>
+    
+    <section class="mb-12">
+      <div class="grid md:grid-cols-2 gap-8 mb-8">
+        <div>
+          <h3 class="text-xl font-semibold mb-4">1. Скрытие в изображениях (LSB метод)</h3>
+          <p class="mb-4">Метод наименьшего значащего бита (LSB) - самый популярный способ скрытия информации в изображениях.</p>
+          <p>Принцип работы: замена последних битов в цветовых каналах пикселей на биты секретного сообщения. Изменения практически незаметны для человеческого глаза.</p>
+        </div>
+        <div class="flex items-center">
+          <img src="https://via.placeholder.com/500x300/1c3c50/6db29c?text=LSB+Method" alt="LSB метод" class="rounded-lg shadow-lg">
+        </div>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-8 mb-8">
+        <div class="flex items-center order-last md:order-first">
+          <img src="https://via.placeholder.com/500x300/1c3c50/6db29c?text=Text+Steganography" alt="Текстовая стеганография" class="rounded-lg shadow-lg">
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">2. Текстовая стеганография</h3>
+          <ul class="list-disc pl-6 mb-4 space-y-2">
+            <li>Использование невидимых символов (Zero-width characters)</li>
+            <li>Изменение пробелов и табуляции</li>
+            <li>Синтаксические особенности языка</li>
+            <li>Метод акростихов (первые буквы строк образуют сообщение)</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold mb-4">3. Аудио и видео стеганография</h3>
+          <p class="mb-4">Методы скрытия информации в аудио и видеофайлах:</p>
+          <ul class="list-disc pl-6 space-y-2">
+            <li>LSB для аудиосэмплов</li>
+            <li>Фазовое кодирование</li>
+            <li>Эхо-методы</li>
+            <li>Скрытие в метаданных</li>
+          </ul>
+        </div>
+        <div class="flex items-center">
+          <img src="https://via.placeholder.com/500x300/1c3c50/6db29c?text=Audio+Video" alt="Аудио и видео" class="rounded-lg shadow-lg">
+        </div>
+      </div>
+    </section>
+    
+    <section class="bg-primary bg-opacity-20 p-6 rounded-lg border border-secondary border-opacity-30">
+      <h3 class="text-xl font-semibold mb-4">Сравнение методов</h3>
+      <div class="overflow-x-auto">
+        <table class="w-full">
+          <thead>
+            <tr class="border-b border-secondary border-opacity-30">
+              <th class="text-left py-2 px-4">Метод</th>
+              <th class="text-left py-2 px-4">Вместимость</th>
+              <th class="text-left py-2 px-4">Обнаружимость</th>
+              <th class="text-left py-2 px-4">Сложность</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-secondary border-opacity-20">
+              <td class="py-2 px-4">LSB в изображениях</td>
+              <td class="py-2 px-4">Высокая</td>
+              <td class="py-2 px-4">Низкая</td>
+              <td class="py-2 px-4">Простая</td>
+            </tr>
+            <tr class="border-b border-secondary border-opacity-20">
+              <td class="py-2 px-4">Невидимые символы</td>
+              <td class="py-2 px-4">Низкая</td>
+              <td class="py-2 px-4">Очень низкая</td>
+              <td class="py-2 px-4">Простая</td>
+            </tr>
+            <tr class="border-b border-secondary border-opacity-20">
+              <td class="py-2 px-4">Аудио LSB</td>
+              <td class="py-2 px-4">Средняя</td>
+              <td class="py-2 px-4">Средняя</td>
+              <td class="py-2 px-4">Средняя</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-4">Метаданные</td>
+              <td class="py-2 px-4">Очень низкая</td>
+              <td class="py-2 px-4">Высокая</td>
+              <td class="py-2 px-4">Очень простая</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer class="p-6 bg-gray-800 mt-12 text-sm text-center">
+    Сделано с божей помощью  © 2025
+  </footer>
+</body>
+</html>
