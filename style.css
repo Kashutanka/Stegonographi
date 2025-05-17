@@ -61,8 +61,8 @@ a {
   text-decoration: none;
 }
 
-button{
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+button {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 button.svg {
@@ -254,8 +254,8 @@ label {
 }
 
 textarea {
-      max-width: 1800px;
-    min-width: 1800px;
+  max-width: 1800px;
+  min-width: 1800px;
 }
 
 input,
@@ -398,7 +398,7 @@ footer {
   color: white;
   padding: 1rem 2rem;
   border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;

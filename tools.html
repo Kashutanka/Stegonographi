@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Инструменты – Стеганография</title>
   <script src="script.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="bg-gray-900 text-white font-sans">
   <header class="p-6 bg-gray-800 shadow-md">
     <h1 class="text-3xl font-bold">Стеганография</h1>
@@ -21,21 +23,24 @@
   </header>
   <main class="p-8 container mx-auto">
     <h2 class="text-2xl font-semibold mb-8">Инструменты для стеганографии</h2>
-    
+
     <section class="mb-12">
       <div class="grid md:grid-cols-2 gap-8 mb-8">
         <div class="card">
           <h3 class="text-xl font-semibold mb-3">Steghide</h3>
-          <p class="mb-4">Популярная консольная утилита для скрытия данных в изображениях и аудиофайлах с использованием алгоритмов сжатия и шифрования.</p>
+          <p class="mb-4">Популярная консольная утилита для скрытия данных в изображениях и аудиофайлах с использованием
+            алгоритмов сжатия и шифрования.</p>
           <div class="bg-dark bg-opacity-50 p-3 rounded mb-3">
             <h4 class="font-semibold text-secondary mb-1">Установка:</h4>
             <code class="text-sm block bg-black bg-opacity-50 p-2 rounded">sudo apt-get install steghide</code>
           </div>
-          <a href="http://steghide.sourceforge.net/" target="_blank" class="text-secondary hover:underline">Посетить официальный сайт →</a>
+          <a href="http://steghide.sourceforge.net/" target="_blank" class="text-secondary hover:underline">Посетить
+            официальный сайт →</a>
         </div>
         <div class="card">
           <h3 class="text-xl font-semibold mb-3">OpenStego</h3>
-          <p class="mb-4">Кроссплатформенный графический инструмент с открытым исходным кодом для стеганографии и цифровых водяных знаков.</p>
+          <p class="mb-4">Кроссплатформенный графический инструмент с открытым исходным кодом для стеганографии и
+            цифровых водяных знаков.</p>
           <div class="bg-dark bg-opacity-50 p-3 rounded mb-3">
             <h4 class="font-semibold text-secondary mb-1">Особенности:</h4>
             <ul class="list-disc pl-5">
@@ -44,32 +49,38 @@
               <li>Шифрование AES-256</li>
             </ul>
           </div>
-          <a href="https://www.openstego.com/" target="_blank" class="text-secondary hover:underline">Посетить официальный сайт →</a>
+          <a href="https://www.openstego.com/" target="_blank" class="text-secondary hover:underline">Посетить
+            официальный сайт →</a>
         </div>
       </div>
-      
+
       <div class="grid md:grid-cols-2 gap-8">
         <div class="card">
           <h3 class="text-xl font-semibold mb-3">zsteg</h3>
-          <p class="mb-4">Инструмент для обнаружения скрытых данных в PNG и BMP файлах. Полезен для анализа и проверки изображений.</p>
+          <p class="mb-4">Инструмент для обнаружения скрытых данных в PNG и BMP файлах. Полезен для анализа и проверки
+            изображений.</p>
           <div class="bg-dark bg-opacity-50 p-3 rounded mb-3">
             <h4 class="font-semibold text-secondary mb-1">Пример использования:</h4>
             <code class="text-sm block bg-black bg-opacity-50 p-2 rounded">zsteg -a image.png</code>
           </div>
-          <a href="https://github.com/zed-0xff/zsteg" target="_blank" class="text-secondary hover:underline">Посетить GitHub репозиторий →</a>
+          <a href="https://github.com/zed-0xff/zsteg" target="_blank" class="text-secondary hover:underline">Посетить
+            GitHub репозиторий →</a>
         </div>
         <div class="card">
           <h3 class="text-xl font-semibold mb-3">Онлайн-генераторы</h3>
           <p class="mb-4">Веб-инструменты для быстрого скрытия и извлечения данных без установки программ:</p>
           <ul class="list-disc pl-5 mb-3">
-            <li><a href="https://stylesuxx.github.io/steganography/" target="_blank" class="text-secondary hover:underline">Steganography Online</a></li>
-            <li><a href="https://www.mobilefish.com/services/steganography/steganography.php" target="_blank" class="text-secondary hover:underline">MobileFish Steganography</a></li>
-            <li><a href="https://www.aperisolve.com/" target="_blank" class="text-secondary hover:underline">AperiSolve (анализ)</a></li>
+            <li><a href="https://stylesuxx.github.io/steganography/" target="_blank"
+                class="text-secondary hover:underline">Steganography Online</a></li>
+            <li><a href="https://www.mobilefish.com/services/steganography/steganography.php" target="_blank"
+                class="text-secondary hover:underline">MobileFish Steganography</a></li>
+            <li><a href="https://www.aperisolve.com/" target="_blank" class="text-secondary hover:underline">AperiSolve
+                (анализ)</a></li>
           </ul>
         </div>
       </div>
     </section>
-    
+
     <section class="bg-primary bg-opacity-20 p-6 rounded-lg border border-secondary border-opacity-30">
       <h3 class="text-xl font-semibold mb-4">Как выбрать инструмент?</h3>
       <p class="mb-4">При выборе инструмента для стеганографии учитывайте следующие факторы:</p>
@@ -90,7 +101,8 @@
     </section>
   </main>
   <footer class="p-6 bg-gray-800 mt-12 text-sm text-center">
-    Сделано с божей помощью  © 2025
+    Сделано с божей помощью © 2025
   </footer>
 </body>
+
 </html>
